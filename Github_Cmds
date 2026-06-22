@@ -1,0 +1,7 @@
+Task -	Command
+Check file changes	- git status
+Stage all changes	- git add .
+Commit changes	- git commit -m "Your message"
+Push changes to GitHub	- git push
+Pull latest changes	- git pull
+View commit history	- git log --oneline
