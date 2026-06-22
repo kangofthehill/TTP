@@ -1,0 +1,10 @@
+sudo chown -R kang /media/Media/TV/
+sudo chown -R kang /media/Media/Movies
+sudo chmod -R 774 /media/Media/Movies
+sudo chmod -R 774 /media/Media/TV
+sudo chmod -R 774 /media/Media/TD/radarr
+sudo chmod -R 774 /media/Media/TD/tv-sonarr
+
+sudo chown -R kang /home/kang/Scripts/environments
+sudo chmod -R 774 /home/kang/Scripts/environments
+

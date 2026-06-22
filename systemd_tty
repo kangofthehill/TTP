@@ -1,0 +1,6 @@
+Password entry required for 'Enter Auth Password:' (PID 76672).
+Please enter password with the systemd-tty-ask-password-agent tool.
+
+sudo systemd-tty-ask-password-agent --watch
+
+sudo systemd-tty-ask-password-agent

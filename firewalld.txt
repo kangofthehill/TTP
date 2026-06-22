@@ -1,0 +1,13 @@
+firewall-cmd --add-service={plex}
+firewall-cmd --list-services
+firewall-cmd --add-port={8085,8086,8181,8686,8787,6767,8096,9000,5055,8282,7878,8989,9696,81,5252,9117,51820,5901}/tcp
+
+firewall-cmd --list-ports
+
+sudo firewall-cmd --zone=trusted --add-port={8085,8086,8181,8686,8787,6767,8096,9000,5055,8282,7878,8989,9696,81,5252,9117,51820,5901}/tcp --permanent
+
+sudo firewall-cmd --zone=trusted --list-ports
+
+sudo firewall-cmd --zone=public --add-forward-port=port=443:proto=tcp:toport=443:toaddr=172.19.0.2 --permanent
+sudo firewall-cmd --reload
+

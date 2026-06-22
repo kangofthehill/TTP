@@ -1,0 +1,51 @@
+docker commit 9bf63f96a459  kang/mariadb:20240930
+docker commit 82422e78ecf9  kang/npm:20240930
+
+docker login -u handyntechy@gmail.com
+Geeked!10000
+
+docker push kangdom/repo:rpm
+docker push kangdom/repo:mariadb
+
+docker compose config
+docker compose up -d
+docker compose up -d --force-recreate
+docker cp prometheus.yml a31aaa40987e:/etc/prometheus/prometheus.yml
+
+
+sudo docker logs nextcloud-aio-mastercontainer
+
+docker exec -it 15e634b4cad1 /bin/sh #interactive mode
+docker volume inspect <volume_name>
+
+
+docker cp container_id:/foo.txt foo.txt #Copy from container
+docker cp foo.txt container_id:/foo.txt #Copy to container
+
+docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}" -a
+
+docker port nginx-proxy-manager
+docker port <container_id>
+
+docker exec -it flaresolverr netstat -tulnp | grep 8191
+
+docker exec -it prowlarr nslookup 1337x.to
+
+docker pull gitlab/gitlab-ce:18.5.4-ce.0
+
+docker save -o ~/Downloads/gitlab-images-all-20251213.tar \
+  gitlab/gitlab-ce:18.2.8-ce.0 \
+  gitlab/gitlab-ce:18.5.4-ce.0
+
+docker save -o ~/Downloads/docker-images/authentik/authentik.ldap.2026.2-20260324.tar authentik/ldap:2026.2
+
+docker save -o ~/Downloads/docker-images/authentik/authentik.proxy.2026.2-20260324.tar authentik/proxy:2026.2
+
+docker save -o ~/Downloads/docker-images/authentik/authentik.rac.2026.2-20260324.tar authentik/rac:2026.2 
+
+docker save -o ~/Downloads/docker-images/authentik/authentik.radius.2026.2-20260324.tar authentik/radius:2026.2
+
+docker save -o ~/Downloads/docker-images/authentik/authentik.server.2026.2-20260324.tar authentik/server:2026.2
+
+docker logs --tail=200 194534a4b3f1
+

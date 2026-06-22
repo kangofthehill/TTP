@@ -1,0 +1,5 @@
+Webssh 
+ssh: 5252
+sftpuser
+Tran$fer!2024
+

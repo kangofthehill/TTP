@@ -1,0 +1,5 @@
+Kangstower Networking Troubleshooting
+
+1.Remove interfaces from Network Manager
+2.sudo systemctl restart networking
+3.sudo systemctl restart NetworkManager

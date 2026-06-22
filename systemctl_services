@@ -1,0 +1,21 @@
+Systemctl Services
+
+systemctl list-units --type=service --state=running --no-pager
+
+systemctl list-unit-files --type=service --state=enabled
+
+systemctl --failed
+
+sudo systemctl daemon-reload
+
+sudo systemctl reset-failed
+
+
+sudo systemctl restart overseerr
+
+systemctl restart sonarr
+systemctl status radarr
+overseer
+plex
+
+systemctl is-active wg-quick@wg-det wg-quick@wg-ash wg-quick@wg-clt

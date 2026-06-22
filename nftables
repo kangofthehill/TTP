@@ -1,0 +1,46 @@
+nftables 
+
+sudo nft list ruleset
+
+Add port
+sudo nft add rule inet filter input tcp dport 80 accept
+sudo nft add rule inet filter input udp dport 1194 accept
+sudo nft add rule inet filter input ip saddr 192.168.1.100 tcp dport 22 accept
+sudo nft list ruleset > /etc/nftables.conf
+sudo systemctl enable --now nftables
+
+sudo netstat -tulnp | grep LISTEN
+
+remove port
+sudo nft list table inet filter
+sudo nft delete rule inet filter input handle <rule_number>
+
+to add rule
+nft add rule inet filter input iifname enp7s0 oifname docker0 tcp dport 443 accept
+nft add rule inet filter input iifname enp7s0 tcp dport 443 dnat to 172.19.0.3:443
+
+
+save
+sudo nft list ruleset > /etc/nftables.conf
+
+tcp dport 80 accept
+		tcp dport 443 accept
+		tcp dport 22 accept
+		tcp dport 5252 accept
+		tcp dport 8086 accept
+		tcp dport 8181 accept
+		tcp dport 9000 accept
+		tcp dport 5055 accept
+		tcp dport 7878 accept
+		tcp dport 8989 accept
+		tcp dport 9696 accept
+		tcp dport 81 accept
+		tcp dport 9117 accept
+		udp dport 51820 accept
+		tcp dport 8191 accept
+		tcp dport 5901 accept
+		tcp dport 8096 accept
+		tcp dport 8080 accept
+		iifname "lo" accept
+		
+		

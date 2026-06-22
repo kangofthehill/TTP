@@ -1,0 +1,13 @@
+Cloudflared Tunnel
+
+cloudflared login
+
+cloudflared tunnel run kangs_cftun_01
+
+cloudflared tunnel list
+
+cloudflared tunnel --config /etc/cloudflared/config.yml run kangs_cftun_01
+
+sudo systemctl restart cloudflared
+
+

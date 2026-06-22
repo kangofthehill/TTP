@@ -1,0 +1,6 @@
+nohup qbittorrent >/dev/null 2>&1 &
+
+ps aux | grep qbittorrent
+
+nohup qbittorrent >/tmp/qbittorrent.log 2>&1 &
+disown

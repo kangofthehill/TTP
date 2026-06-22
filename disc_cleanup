@@ -1,0 +1,28 @@
+Disc Clean Up
+
+1) view log cache
+sudo find /var/log -type f -size +100M -exec ls -lh {} \; | sort -k 5 -hr | head -n 10
+
+2) then clean up logs
+cd /home/kang/Scripts
+su
+bash cleanup_logs.sh
+
+sudo apt clean
+
+
+sudo find /var/log -type f -size +100M -exec ls -lh {} \;
+sudo truncate -s 0 /var/log/syslog
+sudo truncate -s 0 /var/log/ufw.log
+sudo truncate -s 0 /var/log/kern.log
+
+df -h /var
+
+
+
+
+
+
+
+
+

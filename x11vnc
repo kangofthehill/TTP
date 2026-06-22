@@ -1,0 +1,15 @@
+X11vnc 
+
+ps aux | grep x11vnc
+
+start
+sudo /usr/local/bin/start_x11vnc.sh
+
+sudo netstat -plt
+sudo pkill x11vnc
+sudo pkill vnc
+sudo nohup /usr/local/bin/start_x11vnc.sh >/dev/null 2>&1 &
+
+
+unlock session
+loginctl unlock-session $(loginctl list-sessions | grep kang | awk '{print $1}')

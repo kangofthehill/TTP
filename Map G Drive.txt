@@ -1,0 +1,1 @@
+net use g: \\CVA01-FS01\groups /user:chill Matthew7!7 /persistent:yes

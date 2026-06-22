@@ -1,0 +1,7 @@
+Logging
+cat /var/log/ufw.log
+cat /var/log/failed_services.log
+cat /var/log/stopped_services.log
+cat /var/log/ufw_block_entries.log    grep "UFW BLOCK" "$UFW_LOG" | tail -n 100
+
+

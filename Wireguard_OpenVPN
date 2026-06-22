@@ -1,0 +1,17 @@
+Wireguard & OpenVPN
+
+/etc/wireguard/
+
+sudo wg
+
+Open VPN Tunnel Check
+ip addr show tun0 && ip route | grep tun0
+
+sudo ip link set tun0 down
+
+systemctl is-active wg-quick@wg-det wg-quick@wg-ash wg-quick@wg-clt
+vpn det
+vpn ash
+vpn clt
+vpn status
+vpn down

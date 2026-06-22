@@ -1,0 +1,11 @@
+Citrix Troubleshooting
+
+Easy way ...
+
+Import certs into Firefox and then export, and save to keystore. Then rehash. Close and reopen firefox. 
+
+sudo cp -a /home/kang/Downloads/AllCerts/Certificates_PKCS7_v5_14_DoD/ . /opt/Citrix/ICAClient/keystore/cacerts/
+sudo c_rehash /opt/Citrix/ICAClient/keystore/cacerts/ 
+sudo /opt/Citrix/ICAClient/util/ctx_rehash
+
+

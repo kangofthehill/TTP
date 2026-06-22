@@ -1,0 +1,13 @@
+sonarr http://172.18.0.8:8989
+radarr http://172.18.0.7:7878
+jellyfin http://172.18.0.4:8096
+jellyseer http://172.18.0.6:5055
+qbtd http://172.18.0.3:8086
+flaresolverr http://172.18.0.9:8191
+jackett http://172.18.0.10:9117
+prowlarr http://172.18.05:9696
+qbtd http://http://172.18.0.3:8086/
+wireguard http://
+
+
+

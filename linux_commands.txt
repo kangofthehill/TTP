@@ -1,0 +1,24 @@
+sudo bash docker-desktop_check_restart.sh
+
+sudo cd /usr/share/applications/ dex docker-desktop.desktop
+
+docker ps
+
+gtk-launch docker-desktop
+org.qbittorrent.qBittorrent.desktop
+
+
+sudo netstat -plt
+sudo netstat -tulpn
+
+kill -9 PID 723554
+
+sudo pkill x11vnc
+
+1201/nginx: master 
+
+jellyfin-server 
+nginx
+
+sudo mount -o loop Win7_HomePrem_SP1_English_x64.iso rootfs
+

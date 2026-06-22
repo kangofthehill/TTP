@@ -1,0 +1,4 @@
+Radarr Troubleshooting
+rm -rf /opt/radarr && reinstall 145
+
+

@@ -1,0 +1,11 @@
+virt-install \
+  --name cloudron-gui \
+  --ram 4096 \
+  --vcpus 2 \
+  --os-variant ubuntu22.04 \
+  --disk path=/mnt/Cerebellum/vms/cloudron/cloudron_gui.qcow2,size=25,format=qcow2 \
+  --cdrom /mnt/Cerebellum/vms/cloudron/ubuntu/ubuntu-24.04.2-desktop-amd64.iso \
+  --network network=default \
+  --graphics vnc,listen=0.0.0.0 \
+  --video virtio \
+  --sound ich9
